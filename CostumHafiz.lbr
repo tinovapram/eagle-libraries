@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.1.3">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="SOT23-5L" urn="urn:adsk.eagle:footprint:20627/1" locally_modified="yes">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
+package type OT</description>
+<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
+<wire x1="-0.522" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="-1.328" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="1.328" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.328" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="-1.328" y2="0.81" width="0.1524" layer="21"/>
+<smd name="SCL" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="GND" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="SDA" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="VCC" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="WP" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+</package>
+<package name="SOT95P280X100-6" urn="urn:adsk.eagle:footprint:10742416/1">
+<description>6-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.63 X 1.00 mm body
+&lt;p&gt;6-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.63 X 1.00 mm&lt;/p&gt;</description>
+<circle x="-1.4448" y="1.7475" radius="0.25" width="0" layer="21"/>
+<wire x1="-0.875" y1="1.5575" x2="0.875" y2="1.5575" width="0.12" layer="21"/>
+<wire x1="-0.875" y1="-1.5575" x2="0.875" y2="-1.5575" width="0.12" layer="21"/>
+<wire x1="0.875" y1="-1.5" x2="-0.875" y2="-1.5" width="0.12" layer="51"/>
+<wire x1="-0.875" y1="-1.5" x2="-0.875" y2="1.5" width="0.12" layer="51"/>
+<wire x1="-0.875" y1="1.5" x2="0.875" y2="1.5" width="0.12" layer="51"/>
+<wire x1="0.875" y1="1.5" x2="0.875" y2="-1.5" width="0.12" layer="51"/>
+<smd name="1" x="-1.3346" y="0.95" dx="1.36" dy="0.5871" layer="1"/>
+<smd name="2" x="-1.3346" y="0" dx="1.36" dy="0.5871" layer="1"/>
+<smd name="3" x="-1.3346" y="-0.95" dx="1.36" dy="0.5871" layer="1"/>
+<smd name="4" x="1.3346" y="-0.95" dx="1.36" dy="0.5871" layer="1"/>
+<smd name="5" x="1.3346" y="0" dx="1.36" dy="0.5871" layer="1"/>
+<smd name="6" x="1.3346" y="0.95" dx="1.36" dy="0.5871" layer="1"/>
+<text x="0" y="2.6325" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.1925" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SOIC127P599X175-8" urn="urn:adsk.eagle:footprint:10742456/1">
+<description>8-SOIC, 1.27 mm pitch, 6.00 mm span, 4.90 X 3.90 X 1.75 mm body
+&lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 4.90 X 3.90 X 1.75 mm&lt;/p&gt;</description>
+<circle x="-2.8262" y="2.7299" radius="0.25" width="0" layer="21"/>
+<wire x1="-1.995" y1="2.4799" x2="-1.995" y2="2.5" width="0.12" layer="21"/>
+<wire x1="-1.995" y1="2.5" x2="1.995" y2="2.5" width="0.12" layer="21"/>
+<wire x1="1.995" y1="2.5" x2="1.995" y2="2.4799" width="0.12" layer="21"/>
+<wire x1="-1.995" y1="-2.4799" x2="-1.995" y2="-2.5" width="0.12" layer="21"/>
+<wire x1="-1.995" y1="-2.5" x2="1.995" y2="-2.5" width="0.12" layer="21"/>
+<wire x1="1.995" y1="-2.5" x2="1.995" y2="-2.4799" width="0.12" layer="21"/>
+<wire x1="1.995" y1="-2.5" x2="-1.995" y2="-2.5" width="0.12" layer="51"/>
+<wire x1="-1.995" y1="-2.5" x2="-1.995" y2="2.5" width="0.12" layer="51"/>
+<wire x1="-1.995" y1="2.5" x2="1.995" y2="2.5" width="0.12" layer="51"/>
+<wire x1="1.995" y1="2.5" x2="1.995" y2="-2.5" width="0.12" layer="51"/>
+<smd name="1" x="-2.5217" y="1.905" dx="2.2716" dy="0.6419" layer="1"/>
+<smd name="2" x="-2.5217" y="0.635" dx="2.2716" dy="0.6419" layer="1"/>
+<smd name="3" x="-2.5217" y="-0.635" dx="2.2716" dy="0.6419" layer="1"/>
+<smd name="4" x="-2.5217" y="-1.905" dx="2.2716" dy="0.6419" layer="1"/>
+<smd name="5" x="2.5217" y="-1.905" dx="2.2716" dy="0.6419" layer="1"/>
+<smd name="6" x="2.5217" y="-0.635" dx="2.2716" dy="0.6419" layer="1"/>
+<smd name="7" x="2.5217" y="0.635" dx="2.2716" dy="0.6419" layer="1"/>
+<smd name="8" x="2.5217" y="1.905" dx="2.2716" dy="0.6419" layer="1"/>
+<text x="0" y="3.6149" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.135" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SOT95P280X145-5" urn="urn:adsk.eagle:footprint:10742464/1">
+<description>5-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.60 X 1.45 mm body
+&lt;p&gt;5-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.60 X 1.45 mm&lt;/p&gt;</description>
+<circle x="-1.4663" y="1.7686" radius="0.25" width="0" layer="21"/>
+<wire x1="-0.875" y1="1.5786" x2="0.875" y2="1.5786" width="0.12" layer="21"/>
+<wire x1="-0.875" y1="-1.5786" x2="0.875" y2="-1.5786" width="0.12" layer="21"/>
+<wire x1="0.875" y1="-1.525" x2="-0.875" y2="-1.525" width="0.12" layer="51"/>
+<wire x1="-0.875" y1="-1.525" x2="-0.875" y2="1.525" width="0.12" layer="51"/>
+<wire x1="-0.875" y1="1.525" x2="0.875" y2="1.525" width="0.12" layer="51"/>
+<wire x1="0.875" y1="1.525" x2="0.875" y2="-1.525" width="0.12" layer="51"/>
+<smd name="1" x="-1.3033" y="0.95" dx="1.5088" dy="0.6291" layer="1"/>
+<smd name="2" x="-1.3033" y="0" dx="1.5088" dy="0.6291" layer="1"/>
+<smd name="3" x="-1.3033" y="-0.95" dx="1.5088" dy="0.6291" layer="1"/>
+<smd name="4" x="1.3033" y="-0.95" dx="1.5088" dy="0.6291" layer="1"/>
+<smd name="5" x="1.3033" y="0.95" dx="1.5088" dy="0.6291" layer="1"/>
+<text x="0" y="2.6536" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.2136" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="LEDRD508W45D915H427A" urn="urn:adsk.eagle:footprint:10742485/1">
+<description>Radial LED (Round), 5.08 mm pitch, 9.15 mm body diameter, 4.27 mm body height
+&lt;p&gt;Radial LED (Round) package with 5.08 mm pitch, 0.45 mm lead diameter, 9.15 mm body diameter and 4.27 mm body height&lt;/p&gt;</description>
+<wire x1="4.14" y1="2.0051" x2="-4.6" y2="0" width="0.12" layer="21" curve="154.1581"/>
+<wire x1="4.14" y1="-2.0051" x2="-4.6" y2="0" width="0.12" layer="21" curve="-154.1581"/>
+<wire x1="4.14" y1="2.0051" x2="4.14" y2="-2.0051" width="0.12" layer="21"/>
+<wire x1="-3.8497" y1="3.8497" x2="-3.0997" y2="3.8497" width="0.12" layer="21"/>
+<wire x1="-3.4747" y1="4.2247" x2="-3.4747" y2="3.4747" width="0.12" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="0.7" diameter="1.4"/>
+<pad name="2" x="2.54" y="0" drill="0.7" diameter="1.4"/>
+<circle x="0" y="0" radius="4.6" width="0.12" layer="51"/>
+<text x="0" y="5.2419" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.2419" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="SOT95P280X100-6" urn="urn:adsk.eagle:package:10742412/1" type="model">
+<description>6-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.63 X 1.00 mm body
+&lt;p&gt;6-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.63 X 1.00 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOT95P280X100-6"/>
+</packageinstances>
+</package3d>
+<package3d name="SOIC127P599X175-8" urn="urn:adsk.eagle:package:10742431/1" type="model">
+<description>8-SOIC, 1.27 mm pitch, 6.00 mm span, 4.90 X 3.90 X 1.75 mm body
+&lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 4.90 X 3.90 X 1.75 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOIC127P599X175-8"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT95P280X145-5" urn="urn:adsk.eagle:package:10742461/1" type="model">
+<description>5-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.60 X 1.45 mm body
+&lt;p&gt;5-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.60 X 1.45 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOT95P280X145-5"/>
+</packageinstances>
+</package3d>
+<package3d name="LEDRD508W45D915H427A" urn="urn:adsk.eagle:package:10742484/1" type="model">
+<description>Radial LED (Round), 5.08 mm pitch, 9.15 mm body diameter, 4.27 mm body height
+&lt;p&gt;Radial LED (Round) package with 5.08 mm pitch, 0.45 mm lead diameter, 9.15 mm body diameter and 4.27 mm body height&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="LEDRD508W45D915H427A"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="24-LC">
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="2.54" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="6.35" x2="4.826" y2="6.35" width="0.1524" layer="94"/>
+<wire x1="4.826" y1="6.35" x2="4.826" y2="0" width="0.1524" layer="94"/>
+<wire x1="4.826" y1="0" x2="4.826" y2="-6.604" width="0.1524" layer="94"/>
+<wire x1="4.826" y1="-6.604" x2="-2.54" y2="-6.604" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-6.604" x2="-2.54" y2="-4.064" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-4.064" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="6.35" width="0.1524" layer="94"/>
+<wire x1="-12.7" y1="-2.54" x2="-11.176" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="0" x2="10.922" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.588" y1="0" x2="4.826" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="6.096" x2="-1.016" y2="-4.064" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-4.064" x2="-1.016" y2="-4.064" width="0.1524" layer="94"/>
+<wire x1="-5.588" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-12.7" y1="2.54" x2="-11.176" y2="2.54" width="0.1524" layer="94"/>
+<text x="3.81" y="-4.826" size="1.778" layer="94" rot="R90">Array</text>
+<text x="6.604" y="5.08" size="1.778" layer="95">VCC</text>
+<text x="6.858" y="-6.858" size="1.778" layer="95">GND</text>
+<text x="-12.7" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="1.524" y="-4.826" size="1.778" layer="94" rot="R90">EEPROM</text>
+<pin name="VCC" x="7.62" y="10.16" visible="pad" length="short" direction="pwr" rot="R270"/>
+<pin name="GND" x="7.62" y="-10.16" visible="pad" length="short" direction="pwr" rot="R90"/>
+<pin name="SCL" x="-15.24" y="-2.54" length="short" direction="in"/>
+<pin name="SDA" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="WP" x="-15.24" y="2.54" length="short" direction="in"/>
+</symbol>
+<symbol name="LTC6268">
+<pin name="OUT" x="-10.16" y="7.62" length="middle"/>
+<pin name="V-" x="-10.16" y="2.54" length="middle"/>
+<pin name="+IN" x="-10.16" y="-2.54" length="middle"/>
+<pin name="V+" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="SHDN" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="-IN" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="15.24" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<text x="-5.08" y="12.7" size="1.778" layer="94">LTC6268</text>
+</symbol>
+<symbol name="TC7662B">
+<pin name="B" x="-5.08" y="-2.54" length="middle"/>
+<pin name="CAP+" x="-5.08" y="-5.08" length="middle"/>
+<pin name="GND" x="-5.08" y="-7.62" length="middle"/>
+<pin name="CAP-" x="-5.08" y="-10.16" length="middle"/>
+<pin name="V+" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="OSC" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="LV" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="VOUT" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="2.54" size="1.778" layer="94">TC7662B</text>
+</symbol>
+<symbol name="TLV755P">
+<pin name="IN" x="-12.7" y="2.54" length="middle"/>
+<pin name="EN" x="-12.7" y="-2.54" length="middle"/>
+<pin name="OUT" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="7.62" size="1.27" layer="94">TLV755P</text>
+</symbol>
+<symbol name="TPS723XX">
+<pin name="IN" x="-10.16" y="2.54" length="middle"/>
+<pin name="EN" x="-10.16" y="-2.54" length="middle"/>
+<pin name="OUT" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="NR" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<text x="-5.08" y="7.62" size="1.27" layer="94">TPS723xx</text>
+<pin name="GND" x="2.54" y="-15.24" length="middle" rot="R90"/>
+<wire x1="-5.08" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+</symbol>
+<symbol name="PS7-5B">
+</symbol>
+<symbol name="PHOTODIODE">
+<wire x1="1.905" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.905" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-1.27" x2="1.905" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="1.397" x2="1.905" y2="1.397" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="1.016" x2="-4.572" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="-2.794" y1="1.778" x2="-3.81" y2="2.794" width="0.1524" layer="94"/>
+<text x="3.81" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<text x="3.81" y="-1.27" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="C" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-4.064" y="1.016"/>
+<vertex x="-3.556" y="1.524"/>
+<vertex x="-3.302" y="0.762"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="1.778"/>
+<vertex x="-2.794" y="2.286"/>
+<vertex x="-2.54" y="1.524"/>
+</polygon>
+</symbol>
+<symbol name="MAX4203">
+<pin name="IN1" x="-7.62" y="5.08" length="middle"/>
+<pin name="OUT1" x="-7.62" y="2.54" length="middle"/>
+<pin name="VEE1" x="-7.62" y="0" length="middle"/>
+<pin name="VEE2" x="-7.62" y="-2.54" length="middle"/>
+<pin name="VCC1" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="VCC2" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="OUT2" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="IN2" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="17.78" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-5.08" x2="17.78" y2="7.62" width="0.254" layer="94"/>
+<wire x1="17.78" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<text x="-2.54" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="10.16" size="1.778" layer="94">MAX4203</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="COSTUMHAFIZ">
+<gates>
+<gate name="G$1" symbol="24-LC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5L">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="WP" pad="WP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC6268">
+<gates>
+<gate name="G$1" symbol="LTC6268" x="-5.08" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="SOT95P280X100-6">
+<connects>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="-IN" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="SHDN" pad="5"/>
+<connect gate="G$1" pin="V+" pad="6"/>
+<connect gate="G$1" pin="V-" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10742412/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TC7662B">
+<gates>
+<gate name="G$1" symbol="TC7662B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC127P599X175-8">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="CAP+" pad="2"/>
+<connect gate="G$1" pin="CAP-" pad="4"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="LV" pad="6"/>
+<connect gate="G$1" pin="OSC" pad="7"/>
+<connect gate="G$1" pin="V+" pad="8"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10742431/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLV755P">
+<gates>
+<gate name="G$1" symbol="TLV755P" x="7.62" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="SOT95P280X145-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10742461/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS723XX">
+<gates>
+<gate name="G$1" symbol="TPS723XX" x="5.08" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="SOT95P280X145-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="NR" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10742461/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PS7-5B">
+<gates>
+<gate name="G$1" symbol="PHOTODIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LEDRD508W45D915H427A">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10742484/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX4203">
+<gates>
+<gate name="G$1" symbol="MAX4203" x="2.54" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="SOIC127P599X175-8">
+<connects>
+<connect gate="G$1" pin="IN1" pad="1"/>
+<connect gate="G$1" pin="IN2" pad="5"/>
+<connect gate="G$1" pin="OUT1" pad="2"/>
+<connect gate="G$1" pin="OUT2" pad="6"/>
+<connect gate="G$1" pin="VCC1" pad="8"/>
+<connect gate="G$1" pin="VCC2" pad="7"/>
+<connect gate="G$1" pin="VEE1" pad="3"/>
+<connect gate="G$1" pin="VEE2" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10742431/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
+</eagle>
